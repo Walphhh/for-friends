@@ -1,10 +1,12 @@
-import ChristmasTree from "./components/ChristmasTree";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import ChristmasCard from "./components/ChristmasCard";
 
 const App = () => {
   return (
-    <div>
-      <ChristmasTree />
-    </div>
+    <>
+    <ChristmasCard />
+    </>
   );
 };
 
