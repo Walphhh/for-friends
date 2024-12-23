@@ -1,9 +1,22 @@
-import React from 'react'
-
-const LandingPage = () => {
-  return (
-    <><h1>Click here for a surprise</h1></>
-  )
+interface Props {
+  onClick: () => void;
 }
+const LandingPage = ({ onClick }: Props) => {
+  return (
+    <>
+      <div className="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <button
+          type="button"
+          className="btn active"
+          data-bs-toggle="button"
+          aria-pressed="true"
+          onClick={onClick}
+        >
+          <h1>Click me for a surprise!</h1>
+        </button>
+      </div>
+    </>
+  );
+};
 
-export default LandingPage
+export default LandingPage;
