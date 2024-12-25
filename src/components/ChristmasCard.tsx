@@ -1,5 +1,4 @@
 import Snowfall from "react-snowfall";
-import ChristmasTree from "./ChristmasTree";
 import audioFile from "../assets/Song.mp3";
 import { useRef } from "react";
 import ChristmasCat_1 from "../assets/christmas_cat_1.gif";
@@ -43,7 +42,7 @@ const ChristmasCard = ({ name }: Props) => {
         </audio>
         <Snowfall />
         <h1 style={{ fontSize: "5rem" }}>Merry Christmas {name}!</h1>
-        <h3>Here's a Chhristmas Cat :3</h3>
+        <h3>Here's a Christmas Cat :3</h3>
         <p>- Love Ralph &hearts;</p>
         <div>
           <img src={pickRandomCat()} alt="Christmas Cat" />
