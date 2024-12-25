@@ -6,13 +6,18 @@ import { useState } from "react";
 
 const App = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const [name, setName] = useState("");
 
+  const handleSubmit = (submittedName: string) => {
+    setName(submittedName);
+    setIsClicked(true);
+  };
   return (
     <>
       {!isClicked ? (
-        <LandingPage onClick={() => setIsClicked(true)} />
+        <LandingPage onClick={handleSubmit} />
       ) : (
-        <ChristmasCard />
+        <ChristmasCard name={name} />
       )}
     </>
   );
