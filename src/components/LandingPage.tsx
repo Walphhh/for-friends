@@ -7,7 +7,7 @@ const LandingPage = ({ onClick }: Props) => {
       <div className="container d-flex flex-column justify-content-center align-items-center min-vh-100">
         <button
           type="button"
-          className="btn active"
+          className="btn btn-outline-light"
           data-bs-toggle="button"
           aria-pressed="true"
           onClick={onClick}
